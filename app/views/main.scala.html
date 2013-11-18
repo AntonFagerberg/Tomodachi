@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>ともだち</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.min.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <script src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/main.min.js")" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="main">
+            <h1>ともだち</h1>
+            <hr />
+
+            <div id="question"></div>
+            <div id="answer" style="display: none;"></div>
+
+            <input type="text" id="answer_input" autocomplete="off" />
+            <div id="buttons">
+                <input type="button" id="keep" value="Keep" onclick="main.keep()" />
+                <input type="button" id="show" value="Show" onclick="main.show()" />
+                <input type="button" id="remove" value="Remove" onclick="main.remove()" />
+            </div>
+            <hr />
+
+            <form>
+                <select id="categoryId" onchange="main.load($('#categoryId').val())">
+                    <option>---</option>
+                    @for(category <- models.Category.all()) {
+                        <option value="@routes.Application.getByCategory(category.id)">@category.title</option>
+                    }
+                </select>
+            </form>
+        </div>
+    </body>
+</html>
