@@ -52,3 +52,18 @@ main = {
         }
     }
 };
+
+$(window).keydown(function(e) {
+    switch (e.keyCode) {
+        case 38:
+            main.show();
+            return false;
+        case 37:
+            main.keep();
+            return false;
+        case 39:
+            main.remove();
+            return false;
+    }
+    return;
+});
