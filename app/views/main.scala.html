@@ -25,7 +25,7 @@
             <hr />
 
             <form>
-                <select id="categoryId" onchange="main.load($('#categoryId').val())">
+                <select id="categoryId" onblur="main.load($('#categoryId').val())">
                     <option>---</option>
                     @for(category <- models.Category.all()) {
                         <option value="@routes.Application.getByCategory(category.id)">@category.title</option>
