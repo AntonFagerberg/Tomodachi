@@ -18,7 +18,21 @@ INSERT INTO `vocable` (`question`, `answer`, `category_id`)
   ('pen','ペン',1),
   ('hat / cap','ぼおし',1),
   ('book','ほん',1),
+  ('you','あなた',1),
+  ('chair','いす',1),
+  ('dog','いぬ',1),
+  ('souvenir','おみやげ',1),
+  ('child','こども',1),
+  ('rice / meal','ごはん',1),
+  ('picture / photograph','しゃしん',1),
+  ('desk','つくえ',1),
+  ('letter','てがみ',1),
+  ('cat','ねく',1),
+  ('bread','パン',1),
+  ('person','ひと',1),
+  ('e-mail','メール',1),
 
+  -- Verbs
   ('to eat (dictionary form)','たべる',2),
   ('to watch (dictionary form)','みる',2),
   ('to get up (dictionary form)','おきる',2),
@@ -44,6 +58,18 @@ INSERT INTO `vocable` (`question`, `answer`, `category_id`)
   ('to do (present affirmative)','します',2),
   ('to come (present affirmative)','きます',2),
 
+  ('to meet / to see (a person) (dictionary form)','あう',2),
+  ('there is... (dictionary form)','ある',2),
+  ('to buy (dictionary form)','かう',2),
+  ('to write (dictionary form)','かく',2),
+  ('to take (a picture) (dictionary form)','とる',2),
+  ('to wait (dictionary form)','まつ',2),
+  ('to understand (dictionary form)','わかる',2),
+
+
+  ('(a person) is in... stays at... (dictionary form)','いる',2),
+
+  -- Entertainment
   ('movie','えいが',3),
   ('music','おんがく',3),
   ('magazine','ざっし',3),
@@ -78,7 +104,18 @@ INSERT INTO `vocable` (`question`, `answer`, `category_id`)
   ('toilet / restroom','トイレ',5),
   ('library','としょかん',5),
   ('post office','ゆうびんきょく',5),
+  ('temple','おてら',5),
+  ('park','こうえん',5),
+  ('supermarket','スーパー',5),
+  ('department store','デパート',5),
+  ('bus stop','バスてい',5),
+  ('hospital','びょういん',5),
+  ('hotel','ホテル',5),
+  ('bookstore','ほんや',5),
+  ('town / city','まら',5),
+  ('restaurant','レストラン',5),
 
+  -- Time expressions
   ('morning','あさ',6),
   ('tomorrow','あした',6),
   ('when','いつ',6),
@@ -90,21 +127,58 @@ INSERT INTO `vocable` (`question`, `answer`, `category_id`)
   ('sunday','にちようび',6),
   ('every day','まいにち',6),
   ('every night','まいばん',6),
+  ('yesterday','きのう',6),
+  ('...hours','じかん',6),
+  ('one hour','いちじかん',6),
+  ('last week','せんしょう',6),
+  ('when... at the time of...','とき',6),
+  ('monday','げつようび',6),
+  ('tuesday','かようび',6),
+  ('wednesday','すいようび',6),
+  ('thursday','もくようび',6),
+  ('friday','きんようび',6),
 
+  -- Adjectives
   ('good','いい',7),
   ('early','はやい',7),
 
+  -- Adverbs
   ('not much','あまり',8),
   ('no at all','ぜんぜん',8),
   ('usually','たいてい',8),
   ('a little','ちょっと',8),
   ('sometimes','ときどき',8),
   ('often / much','よく',8),
+  ('about (approximate measurement)','ぐらい',8),
+  ('so / therefore','だから',8),
+  ('many / a lot','たくさん',8),
+  ('together with (a person)','と',8),
+  ('why','どうして',8),
+  ('alone','ひとりで',8),
 
+  -- Expressions / Greetings
   ('that`s right / let me see','そうですね',9),
   ('but','でも',9),
   ('how about / how is','どうですか',9),
+  ('good morning','おはよう　ございます',9),
+  ('good afternoon','こんいちは',9),
+  ('good evening','こんばんは',9),
+  ('good-bye','さようなら',9),
+  ('good night','おやすみなさい',9),
+  ('thank you','ありがとう　ございます',9),
+  ('excuse me / sorry','すみません',9),
+  ('no / not at all','いいえ',9),
+  ('ill go and come back','いってきます',9),
+  ('please go and come back','いってらっしゃい',9),
+  ('im home','ただいま',9),
+  ('welcome home','おかえりなさい',9),
+  ('thank you for the meal (before eating)','いただきます',9),
+  ('thank you for the meal (after eating)','ごちそうさまでした',9),
+  ('how do you do?','はじめまして',9),
+  ('nice to meet you','よろしく　おねがいします',9),
+  ('im sorry','ごめなさい',9),
 
+  -- Numbers
   ('0','れい／ゼロ',10),
   ('1','いち',10),
   ('2','に',10),
@@ -161,6 +235,7 @@ INSERT INTO `vocable` (`question`, `answer`, `category_id`)
   ('80,000','はちまん',10),
   ('90,000','きゅうまん',10),
 
+  -- Kanji
   ('1','一',11),
   ('2','二',11),
   ('3','三',11),
@@ -177,6 +252,7 @@ INSERT INTO `vocable` (`question`, `answer`, `category_id`)
   ('yen','円',11),
   ('time','時',11),
 
+  -- Katakana
   ('a','ア',12),
   ('i','イ',12),
   ('u','ウ',12),
@@ -302,6 +378,24 @@ INSERT INTO `vocable` (`question`, `answer`, `category_id`)
   ('vi','ヴィ',12),
   ('vu','ヴ',12),
   ('ve','ヴェ',12),
-  ('vo','ヴォ',12);
+  ('vo','ヴォ',12),
+
+  -- Nouns
+  ('part-time job','アレバイト',13),
+  ('shopping','かいもの',13),
+  ('class','クラス',13),
+
+  -- Location words
+  ('right','みぎ',13),
+  ('left','ひだり',13),
+  ('front','まえ',13),
+  ('back','うしろ',13),
+  ('inside','なか',13),
+  ('on','うえ',13),
+  ('under','した',13),
+  ('near / nearby','らかく',13),
+  ('next (to)','となり',13),
+  ('between','あいだ',13);
+
 # --- !Downs
 DELETE FROM vocable;

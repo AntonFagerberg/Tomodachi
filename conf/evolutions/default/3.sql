@@ -13,7 +13,9 @@ INSERT INTO `category` (`id`, `title`)
   (9,'Expressions'),
   (10,'Numbers'),
   (11,'Kanji'),
-  (12,'Katakana');
+  (12,'Katakana'),
+  (13,'Nouns'),
+  (14,'Location words');
 
 # --- !Downs
 DELETE FROM category;
