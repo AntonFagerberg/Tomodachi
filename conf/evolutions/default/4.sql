@@ -59,12 +59,19 @@ INSERT INTO `vocable` (`question`, `answer`, `category_id`)
   ('to come (present affirmative)','きます',2),
 
   ('to meet / to see (a person) (dictionary form)','あう',2),
+  ('to meet / to see (a person) (present affirmative)','あいます',2),
   ('there is... (dictionary form)','ある',2),
+  ('there is... (present affirmative)','あります',2),
   ('to buy (dictionary form)','かう',2),
+  ('to buy (present affirmative)','かいます',2),
   ('to write (dictionary form)','かく',2),
+  ('to write (present affirmative)','かきます',2),
   ('to take (a picture) (dictionary form)','とる',2),
+  ('to take (a picture) (present affirmative)','とります',2),
   ('to wait (dictionary form)','まつ',2),
+  ('to wait (present affirmative)','きちます',2),
   ('to understand (dictionary form)','わかる',2),
+  ('to understand (present affirmative)','わかります',2),
 
 
   ('(a person) is in... stays at... (dictionary form)','いる',2),
@@ -83,7 +90,7 @@ INSERT INTO `vocable` (`question`, `answer`, `category_id`)
   ('breakfast','おさごはん',4),
   ('sake / alcohol','おさけ',4),
   ('green tea','おちゃ',4),
-  ('coffe','コーヒー',4),
+  ('coffee','コーヒー',4),
   ('dinner','ばんごはん',4),
   ('hamburger','ハンバーガー',4),
   ('lunch','ひるごはん',4),
@@ -91,7 +98,7 @@ INSERT INTO `vocable` (`question`, `answer`, `category_id`)
   ('delicious','おいしい',4),
   ('fish','さかな',1),
   ('pork cutlet','とんかつ',4),
-  ('meat','ねく',4),
+  ('meat','にく',4),
   ('menu','メニュー',4),
   ('vegetable','やさい',4),
 
@@ -112,7 +119,7 @@ INSERT INTO `vocable` (`question`, `answer`, `category_id`)
   ('hospital','びょういん',5),
   ('hotel','ホテル',5),
   ('bookstore','ほんや',5),
-  ('town / city','まら',5),
+  ('town / city','まち',5),
   ('restaurant','レストラン',5),
 
   -- Time expressions
@@ -177,6 +184,12 @@ INSERT INTO `vocable` (`question`, `answer`, `category_id`)
   ('how do you do?','はじめまして',9),
   ('nice to meet you','よろしく　おねがいします',9),
   ('im sorry','ごめなさい',9),
+  ('welcome (to our store)','いらっしゃいませ',9),
+  ('... please','を　おねがいします',9),
+  ('please give me ...','を　ください',9),
+  ('then ... / if that is the case ...','じゃあ',9),
+  ('please / here it is','どうぞ',9),
+  ('thank you','どうも',9),
 
   -- Numbers
   ('0','れい／ゼロ',10),
@@ -251,6 +264,23 @@ INSERT INTO `vocable` (`question`, `answer`, `category_id`)
   ('10,000','万',11),
   ('yen','円',11),
   ('time','時',11),
+
+  ('day / sun','日',11),
+  ('book / basis','本',11),
+  ('person','人？',11),
+  ('moon / month','月',11),
+  ('fire','火',11),
+  ('water','水',11),
+  ('tree','木',11),
+  ('gold / money','金',11),
+  ('soil','土',11),
+  ('up','上',11),
+  ('weekday','?',11),
+  ('down','下',11),
+  ('middle','中',11),
+  ('half','半',11),
+
+
 
   -- Katakana
   ('a','ア',12),
@@ -386,16 +416,76 @@ INSERT INTO `vocable` (`question`, `answer`, `category_id`)
   ('class','クラス',13),
 
   -- Location words
-  ('right','みぎ',13),
-  ('left','ひだり',13),
-  ('front','まえ',13),
-  ('back','うしろ',13),
-  ('inside','なか',13),
-  ('on','うえ',13),
-  ('under','した',13),
-  ('near / nearby','らかく',13),
-  ('next (to)','となり',13),
-  ('between','あいだ',13);
+  ('right','みぎ',14),
+  ('left','ひだり',14),
+  ('front','まえ',14),
+  ('back','うしろ',14),
+  ('inside','なか',14),
+  ('on','うえ',14),
+  ('under','した',14),
+  ('near / nearby','らかく',14),
+  ('next (to)','となり',14),
+  ('between','あいだ',14),
+
+  -- In the classroom
+  ('Do you understand?','わかりましたか',15),
+  ('I understand / I understood','わかりました',15),
+  ('I dont undertand / I dont know','わかりません',15),
+  ('Please say it slowly','ゆっくりいってください',15),
+  ('Please say it again','もおいちどいってください',15),
+  ('Please wait','ちょっとまってください',15),
+  ('Please listen / Please ask','きいてください',15),
+  ('Please look at page 10','じゅうぺじをみてください',15),
+
+  -- Words that point
+  ('this one','これ',16),
+  ('that one','それ',16),
+  ('that one (over there)','あれ',16),
+  ('which one','ぢれ',16),
+  ('this ...','この',16),
+  ('that ...','その',16),
+  ('that ... (over there)','あの',16),
+  ('which ...','どの',16),
+  ('here','ここ',16),
+  ('there','そこ',16),
+  ('over there','あそこ',16),
+  ('where','どこ',16),
+  ('who','だれ',16),
+
+  -- Money matters
+  ('how much','いくら',17),
+  ('... yen','えん',17),
+  ('expensive / high','たかい',17),
+
+  -- Occupations
+  ('job / work / occupation','しごと',18),
+  ('doctor','いしゃ',18),
+  ('office worker','かいしゃいん',18),
+  ('high school student','こうこうせい',18),
+  ('housewife','しゅふ',18),
+  ('graduate student','だいがくいんせい',18),
+  ('college student','だいがくせい',18),
+  ('lawyer','べんごし',18),
+
+  -- Family
+  ('mother','おかあさん',19),
+  ('father','おとうさん',19),
+  ('older sister','おねえさん',19),
+  ('older brother','おにいさん',19),
+  ('younger sister','いもうと',19),
+  ('younger brother','おとうと',19),
+
+  -- Majors
+  ('science','かがく',20),
+  ('asian studies','アジアけんきゅ',20),
+  ('economics','けいざい',20),
+  ('international relations','こくさいかんけい',20),
+  ('computer','こんぴゅうたあ',20),
+  ('anthropology','じんるいがく',20),
+  ('politics','せいじ',20),
+  ('business','びじねす',20),
+  ('literature','ぶんがく',20),
+  ('history','れきし',20);
 
 # --- !Downs
 DELETE FROM vocable;
