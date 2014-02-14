@@ -2,30 +2,22 @@
 DELETE FROM category;
 INSERT INTO `category` (`id`, `title`)
   VALUES
-  (1,'Things'),
-  (2,'Verbs'),
-  (3,'Entertainment & Sports'),
-  (4,'Food & Drinks'),
-  (5,'Places'),
-  (6,'Time expressions'),
-  (7,'Adjectives'),
-  (8,'Adverbs'),
-  (9,'Expressions'),
-  (10,'Numbers'),
-  (11,'Kanji'),
-  (12,'Katakana'),
-  (13,'Nouns'),
-  (14,'Location words'),
-  (15,'In the classroom'),
-  (16,'Words that point'),
-  (17,'Money matters'),
-  (18,'Occupations'),
-  (19,'Family'),
-  (20,'Majors');
+  (1,'Phrases'),
+  (2,'Vocabulary'),
+  (3,'Nouns'),
+  (4,'Countries'),
+  (5,'Majors'),
+  (6,'Time & Age'),
+  (7,'Location words'),
+  (8,'Time expressions'),
+  (9,'Verbs'),
+  (12,'Adjectives'),
+  (11,'Adverbs'),
+  (13,'Kanji'),
+  (10,'Numbers');
 
-  -- lägg till tid (timmar & minuter)
-  -- Länder?
-  -- days weeks month years (iaf när jag är född)
+  -- Sidan 127 :E
+  -- 145 kanske
 
 # --- !Downs
 DELETE FROM category;
