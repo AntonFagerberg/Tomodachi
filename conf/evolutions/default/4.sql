@@ -169,7 +169,7 @@ INSERT INTO `vocable` (`question`, `answer`, `category_id`)
   ('Picture / Photograph','しゃしん',3),
   ('Desk','つくえ',3),
   ('Letter','てがみ',3),
-  ('Cat','ねく',3),
+  ('Cat','ねこ',3),
   ('Bread','パン',3),
   ('Person','ひと',3),
   ('E-mail','メール',3),
