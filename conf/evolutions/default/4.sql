@@ -211,7 +211,7 @@ INSERT INTO `vocable` (`question`, `answer`, `category_id`)
   ('Train','でんしゃ',3),
   ('Baggage','にもつ',3),
   ('Page','ページ',3),
-  ('Window','もど',3),
+  ('Window','まど',3),
   ('Night','よる',3),
   ('Shop / Store','みせ',3),
   ('Sweet bun','おまんしゅう',3),
